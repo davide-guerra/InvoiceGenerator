@@ -11,7 +11,7 @@ $html ='
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Print Invoice</title>
+	<title>La tua fattura</title>
 	<style>
 		*
 		{
@@ -237,19 +237,14 @@ $html ='
 			<td>Iva 22%:</td>
 			<td class="mono">' .number_format((float)$calcolo_iva, 2, '.', ''). ' €</td>
 			</tr>
+		<tr>
+			<td></td>
+			<td><b>Tot dovuto</b></td>
+			<td class="mono">' .number_format((float)$totale_reale, 2, '.', ''). ' €</td>
+		</tr>
 	</table>
 	</div>
-	<div id="invoice_total">
-		<table>
-			<tr>
-				<td style="text-align:left; padding-left:10px;"></td>
-				<td style="width:15%;">Tot dovuto</td>
-				<td style="width:15%;" class="mono">' .number_format((float)$totale_reale, 2, '.', ''). '</td>
-			</tr>
-		</table>
-	</div>
-	<br />
-	<hr />
+	
 	<br />
 	
 	<table style="width:100%; height:35mm;">
