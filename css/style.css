@@ -1,0 +1,25 @@
+
+  .multi-step-form fieldset {
+    display: none;
+  }
+  .multi-step-form fieldset:first-of-type {
+    display: block;
+  }
+  .multi-step-form fieldset.hidden {
+    display: none;
+  }
+  .multi-step-form fieldset.visible {
+    display: block;
+  }
+  .multi-step-form .steps button {
+    border: 0;
+  }
+ fieldset{
+   border: 0;
+ }
+ h4.center {
+  padding-bottom: 3em;
+}
+i.remove {
+  cursor: pointer;
+}
